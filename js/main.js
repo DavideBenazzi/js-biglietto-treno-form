@@ -22,7 +22,7 @@ genera.addEventListener('click' , function () {
   var nomeUtente = nome.value;
   var km = chilometri.value;
   var fasciaEta = eta.value;
-  // console.log(nomeUtente , km , fasciaEta);               <----da togliere
+
   if (fasciaEta === 'minorenne') {
     var prezzoBiglietto = prezzoMinori * km;
   }
@@ -32,5 +32,9 @@ genera.addEventListener('click' , function () {
   else {
     var prezzoBiglietto = prezzo * km;
   }
-  console.log(prezzoBiglietto);
+  dettagli.innerHTML = nomeUtente;
+  offerta.innerHTML = 'Offerta' + fasciaEta;
+  carrozza.innerHTML = Math.ceil( Math.random() * 10 );
+  codice.innerHTML = Math.floor( Math.random() * 10000 ) + 90000;
+  costo.innerHTML = prezzoBiglietto + ' €';
 })
