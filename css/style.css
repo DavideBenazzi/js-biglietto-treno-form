@@ -4,19 +4,33 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: #B91450;
+}
+
 main {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
-  background-color: lightgrey;
 }
 
 h2 {
-  width: 100%;
+  color: #fff;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+label {
+  color :#B91450;
 }
 
 input,
 select {
   width: 100%;
+  text-align: center;
+  border: none;
+  border-radius: 4px;
+  border: 1px solid #B91450;
+  padding: 1rem;
 }
 /* UTILITY */
 .nascosto {
@@ -54,7 +68,32 @@ select {
   margin: 0 auto;
   padding: 1rem;
 }
+/* SEZIONE INSERISCI I DATI */
+.box-input {
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 1rem;
+}
 
 .input {
   width: 30%;
+}
+/* SEZIONE STAMPA BIGLIETTO */
+.box-biglietto {
+  background-color: #fff;
+  padding: 1rem;
+}
+
+.contenitore .box-biglietto h3 {
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+.box-biglietto table {
+  width: 100%;
+  text-align: left;
+}
+
+.box-biglietto td {
+  padding-top: 30px;
 }

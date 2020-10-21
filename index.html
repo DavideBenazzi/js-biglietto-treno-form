@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <title>js-biglietto-treno-form</title>
   </head>
@@ -10,51 +10,56 @@
     <!-- SEZIONE INSERISCI I DATI -->
     <div class="contenitore text-center">
       <h2 class="mb2rem">Calcola il prezzo del tuo biglietto</h2>
-      <main class="flex wrap">
-        <!-- NOME E COGNOME -->
-        <div class="input">
-          <label for="nome">Nome e Cognome</label>
-          <input type="text" name="nome" id="nome">
-        </div>
-        <!-- CHILOMETRI -->
-        <div class="input">
-          <label for="chilometri">Km da percorrere</label>
-          <input type="number" name="chilometri" id="chilometri">
-        </div>
-        <!-- ETA -->
-        <div class="input">
-          <label for="eta">Fascia d'età</label>
-          <select class="eta" name="eta" id="eta">
-            <option value="minorenne">Minorenne</option>
-            <option value="maggiorenne">Maggiorenne</option>
-            <option value="over65">Over 65 anni</option>
-          </select>
-        </div>
-      </main>
+      <div class="box-input mb2rem">
+        <main class="flex wrap mb1rem">
+          <!-- NOME E COGNOME -->
+          <div class="input">
+            <label for="nome">Nome e Cognome</label>
+            <input type="text" name="nome" id="nome">
+          </div>
+          <!-- CHILOMETRI -->
+          <div class="input">
+            <label for="chilometri">Km da percorrere</label>
+            <input type="number" name="chilometri" id="chilometri">
+          </div>
+          <!-- ETA -->
+          <div class="input">
+            <label for="eta">Fascia d'età</label>
+            <select class="eta" name="eta" id="eta">
+              <option value="minorenne">Minorenne</option>
+              <option value="maggiorenne">Maggiorenne</option>
+              <option value="over65">Over 65 anni</option>
+            </select>
+          </div>
+        </main>
         <!-- BOTTONI -->
-      <section>
-        <button class="mb1rem" type="button" name="button" id="genera">Genera</button>
-        <button class="mb1rem" type="button" name="button" id="annulla">Annulla</button>
-      </section>
+        <section>
+          <button class="mb1rem" type="button" name="button" id="genera">Genera</button>
+          <button class="mb1rem" type="button" name="button" id="annulla">Annulla</button>
+        </section>
+      </div>
       <!-- SEZIONE STAMPA BIGLIETTO -->
       <section class="nascosto" id="biglietto">
         <h2 class="mb2rem">Il tuo biglietto</h2>
-        <table>
-          <tr>
-            <th>Dettagli Passeggeri</th>
-            <th>Offerta</th>
-            <th>Carrozza</th>
-            <th>Codice CP</th>
-            <th>Costo Biglietto</th>
-          </tr>
-          <tr>
-            <td><span id="dettagli"></span></td>
-            <td><span id="offerta"></span></td>
-            <td><span id="carrozza"></span></td>
-            <td><span id="codice"></span></td>
-            <td><span id="costo"></span></td>
-          </tr>
-        </table>
+        <div class="box-biglietto">
+          <table>
+            <h3>Dettagli passeggeri</h3>
+            <tr>
+              <th>Nome Passeggero</th>
+              <th>Offerta</th>
+              <th>Carrozza</th>
+              <th>Codice CP</th>
+              <th>Costo Biglietto</th>
+            </tr>
+            <tr>
+              <td><span id="dettagli"></span></td>
+              <td><span id="offerta"></span></td>
+              <td><span id="carrozza"></span></td>
+              <td><span id="codice"></span></td>
+              <td><span id="costo"></span></td>
+            </tr>
+          </table>
+        </div>
       </section>
 
       <!-- JAVASCRIPT -->
