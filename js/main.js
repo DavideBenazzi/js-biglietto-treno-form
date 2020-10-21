@@ -10,3 +10,11 @@ var offerta = document.getElementById('offerta');
 var carrozza = document.getElementById('carrozza');
 var codice = document.getElementById('codice');
 var costo = document.getElementById('costo');
+
+// EVENTO GENERA BIGLIETTO
+genera.addEventListener('click' , function () {
+  var nomeUtente = nome.value;
+  var km = chilometri.value;
+  var fasciaEta = eta.value;
+  // console.log(nomeUtente , km , fasciaEta);               <----da togliere
+})
