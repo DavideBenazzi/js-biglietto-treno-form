@@ -36,5 +36,14 @@ genera.addEventListener('click' , function () {
   offerta.innerHTML = 'Offerta' + fasciaEta;
   carrozza.innerHTML = Math.ceil( Math.random() * 10 );
   codice.innerHTML = Math.floor( Math.random() * 10000 ) + 90000;
-  costo.innerHTML = prezzoBiglietto + ' €';
+  costo.innerHTML = prezzoBiglietto.toFixed(2) + ' €';
+})
+
+// EVENTO ANNULLA
+annulla.addEventListener('click' , function () {
+  dettagli.innerHTML = '';
+  offerta.innerHTML = '';
+  carrozza.innerHTML = '';
+  codice.innerHTML = '';
+  costo.innerHTML = '';
 })
