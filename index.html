@@ -7,6 +7,45 @@
     <title>js-biglietto-treno-form</title>
   </head>
   <body>
+    <!-- SEZIONE INSERISCI I DATI -->
+    <main>
+      <h2>Calcola il prezzo del tuo biglietto</h2>
+      <label for="nome">Nome e Cognome</label>
+      <input type="text" name="nome" value="nome" id="nome">
+      <label for="chilometri">Km da percorrere</label>
+      <input type="number" name="chilometri" value="chilometri" id="chilometri">
+      <label for="eta">Fascia d'età</label>
+      <select class="eta" name="eta" id="eta">
+        <option value="minorenne">Minorenne</option>
+        <option value="maggiorenne">Maggiorenne</option>
+        <option value="over65">Over 65 anni</option>
+      </select>
+      <!-- BOTTONI -->
+      <section>
+        <button type="button" name="button" id="genera">Genera</button>
+        <button type="button" name="button" id="annulla">Annulla</button>
+      </section>
+    </main>
+    <!-- SEZIONE STAMPA BIGLIETTO -->
+    <section id="biglietto">
+      <h2>Il tuo biglietto</h2>
+      <table>
+        <tr>
+          <th>Dettagli Passeggeri</th>
+          <th>Offerta</th>
+          <th>Carrozza</th>
+          <th>Codice CP</th>
+          <th>Costo Biglietto</th>
+        </tr>
+        <tr>
+          <td><span id="dettagli"></span></td>
+          <td><span id="offerta"></span></td>
+          <td><span id="carrozza"></span></td>
+          <td><span id="codice"></span></td>
+          <td><span id="costo"></span></td>
+        </tr>
+      </table>
+    </section>
 
     <!-- JAVASCRIPT -->
     <script src="./js/main.js" charset="utf-8"></script>
