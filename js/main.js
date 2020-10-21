@@ -33,7 +33,7 @@ genera.addEventListener('click' , function () {
     var prezzoBiglietto = prezzo * km;
   }
   dettagli.innerHTML = nomeUtente;
-  offerta.innerHTML = 'Offerta' + fasciaEta;
+  offerta.innerHTML = 'Offerta ' + fasciaEta;
   carrozza.innerHTML = Math.ceil( Math.random() * 10 );
   codice.innerHTML = Math.floor( Math.random() * 10000 ) + 90000;
   costo.innerHTML = prezzoBiglietto.toFixed(2) + ' €';
