@@ -6,4 +6,55 @@
 
 main {
   font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  background-color: lightgrey;
+}
+
+h2 {
+  width: 100%;
+}
+
+input,
+select {
+  width: 100%;
+}
+/* UTILITY */
+.nascosto {
+  opacity: 0;
+}
+
+.visible {
+  opacity: 1;
+}
+
+.mb2rem {
+  margin-bottom: 2rem;
+}
+
+.mb1rem {
+  margin-bottom: 1rem;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+/* MAIN */
+.contenitore {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.input {
+  width: 30%;
 }

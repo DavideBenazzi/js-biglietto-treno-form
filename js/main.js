@@ -1,7 +1,7 @@
 // COSTANTI
-var prezzo = 0.21;
-var prezzoMinori = 0.21 * 0.8;
-var prezzoMaggiori = 0.21 * 0.6;
+var prezzo = 0.21;  //prezzo normale
+var prezzoMinori = 0.21 * 0.8;  //sconto 20% minorenni
+var prezzoMaggiori = 0.21 * 0.6;  //sconto 40% over65
 
 
 // REFERENZE
@@ -37,6 +37,7 @@ genera.addEventListener('click' , function () {
   carrozza.innerHTML = Math.ceil( Math.random() * 10 );
   codice.innerHTML = Math.floor( Math.random() * 10000 ) + 90000;
   costo.innerHTML = prezzoBiglietto.toFixed(2) + ' €';
+  biglietto.className = 'visibile';
 })
 
 // EVENTO ANNULLA
@@ -46,4 +47,5 @@ annulla.addEventListener('click' , function () {
   carrozza.innerHTML = '';
   codice.innerHTML = '';
   costo.innerHTML = '';
+  biglietto.className = 'nascosto';
 })
